@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: preterm
+Version: 0.1
+Author: Raghul Rajkumar
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
