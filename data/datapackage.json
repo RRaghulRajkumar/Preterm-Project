@@ -1,0 +1,169 @@
+{
+  "accrual_periodicity": "annually",
+  "additional_limitations": "",
+  "citation": "Maternal, Child and Adolescent Health Program, California Department of Public Health. 2020. Preterm and Very Preterm Births by RaceEthnicity 2017-2018.\r\nMaternal, Child and Adolescent Health Program, California Department of Public Health. 2020. Preterm and Very Preterm Births by County 2017-2018.\r\n",
+  "contact_email": "opendata@cdph.ca.gov",
+  "data_collection_tool": "Table is based on California birth data obtained from birth data registered in the California Automated Vital Statistics System.",
+  "data_license": "Terms of Use",
+  "de_identification_method": "Events are not shown when less than 11. Percents and confidence intervals are also not shown when the Events are less than 11. Statewide totals include any suppressed data.",
+  "description": "This dataset contains percent preterm and very preterm live births by race/ethnic group of mother. Preterm births are all live births less than 37 weeks of gestation. Very preterm births are all live births less than 32 weeks of gestation. Important growth and development occur throughout pregnancy, especially in the final months and weeks. There is a higher risk of serious disability or death the earlier a baby is born. Gestational age is based on obstetric estimate at delivery (OE). Data includes births with gestational age of 17-47 weeks.  Note: The race and ethnic groups in this table utilize eight mutually exclusive race and ethnicity categories. These categories are Hispanic and the following Non-Hispanic categories of Multi-Race, African-American, American Indian (includes Eskimo and Aleut), Asian, Pacific Islander (includes Hawaiian), White (includes Other race) and Unknown (includes refused to state and missing).                                                                                                 \r\n\r\nData should not be compared to other data where gestational age is based on the date of last normal menses (LMP) and not OE. The National Center for Health Statistics recently transitioned to using an OE-based gestational age measure due to increasing evidence  of its greater validity compared with the LMP-based measure. (http://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_05.pdf)\r\n",
+  "geo_coverage": "California",
+  "geographic_granularity": "county",
+  "keywords": [
+    "CFH",
+    "maternal child adolescent health",
+    "preterm births",
+    "very preterm births"
+  ],
+  "limitations": "Limitations",
+  "name": "preterm-and-very-preterm-live-births",
+  "program_web_page": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/default.aspx",
+  "related_resources": "",
+  "resources": [
+    {
+      "description": "This dataset contains percent preterm and very preterm live births by race/ethnic group of mother. Preterm births are all live births less than 37 weeks of gestation. Very preterm births are all live births less than 32 weeks of gestation. Important growth and development occur throughout pregnancy, especially in the final months and weeks. There is a higher risk of serious disability or death the earlier a baby is born. ",
+      "format": "CSV",
+      "name": "preterm-and-very-preterm-births-by-race-ethnicity",
+      "path": "preterm-and-very-preterm-births-by-race-ethnicity.csv",
+      "schema": {
+        "fields": [
+          {
+            "description": "Year in which events occurred",
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "description": "The race and ethnic groups in this table utilize eight mutually exclusive race and ethnicity categories. These categories are Hispanic and the following: Non-Hispanic categories of Multi-Race, African-American, American Indian (includes Eskimo and Aleut), Asian, Pacific Islander (includes Hawaiian), White (includes Other specified race) and Unknown (includes refused to state and missing race). The number of births with ‘Other’ race is very small and does not change the ‘White’ preterm birth rate when grouped together.",
+            "name": "Race/Ethnicity",
+            "type": "string"
+          },
+          {
+            "description": "Either Preterm or Very Preterm Births. Preterm births are all live births <37 weeks of gestation. Very preterm births are all live births <32 weeks of gestation. Gestational age is based on obstetric estimate at delivery. Data includes births with gestational age of 17-47 weeks. ",
+            "name": "Birth Type",
+            "type": "string"
+          },
+          {
+            "description": "Total count of live births within year",
+            "name": "Total Births",
+            "type": "number"
+          },
+          {
+            "description": "Count of preterm or very preterm live births within year",
+            "name": "Events",
+            "type": "number"
+          },
+          {
+            "description": "Calculated by dividing the Count by Total Births, then multiplying by 100",
+            "name": "Percent",
+            "type": "number"
+          },
+          {
+            "description": "Upper limit of 95% confidence interval.  The 95% confidence limits depict the range within which the percentage would probably occur in 95 of 100 sets of data (if data similar to the present set were independently acquired on 100 separate occasions). In five of those 100 data sets, the percentage would fall outside the limits.",
+            "name": "Upper 95% CI",
+            "type": "number"
+          },
+          {
+            "description": "Lower limit of 95% confidence interval.  The 95% confidence limits depict the range within which the percentage would probably occur in 95 of 100 sets of data (if data similar to the present set were independently acquired on 100 separate occasions). In five of those 100 data sets, the percentage would fall outside the limits.",
+            "name": "Lower 95% CI",
+            "type": "number"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/55aa219b-c041-45cb-aa54-0fafd5381901/resource/b9fd83cf-19de-4d7a-a40d-76bb7c71e41a/download/preterm-and-very-preterm-births-by-raceethnicity-2010-2018.csv",
+          "title": "Preterm and Very Preterm Births by Race/Ethnicity"
+        }
+      ],
+      "title": "Preterm and Very Preterm Births by Race/Ethnicity"
+    },
+    {
+      "format": "XLSX",
+      "name": "data-dictionary-preterm-and-very-preterm-births-by-race-ethnicity",
+      "path": "data-dictionary-preterm-and-very-preterm-births-by-race-ethnicity.xlsx",
+      "schema": {
+        "fields": []
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/55aa219b-c041-45cb-aa54-0fafd5381901/resource/c469e264-74be-49c3-81f6-c7ddae368c08/download/pretermandverypretermbirthsbyraceethnicity2010-2013-dd.xlsx",
+          "title": "Data Dictionary-Preterm and Very Preterm Births by Race/Ethnicity"
+        }
+      ],
+      "title": "Data Dictionary-Preterm and Very Preterm Births by Race/Ethnicity"
+    },
+    {
+      "description": "This dataset contains percent preterm and very preterm live births by maternal county of residence. Preterm births are all lives births less than 37 weeks of gestation. Very preterm births are all live births less than 32 weeks of gestation. Important growth and development occur throughout pregnancy, especially in the final months and weeks. There is a higher risk of serious disability or death the earlier a baby is born. ",
+      "format": "CSV",
+      "name": "preterm-and-very-preterm-births-by-county",
+      "path": "preterm-and-very-preterm-births-by-county.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Birth Type",
+            "type": "string"
+          },
+          {
+            "name": "Total Births",
+            "type": "string"
+          },
+          {
+            "name": "Events",
+            "type": "string"
+          },
+          {
+            "name": "Percent",
+            "type": "string"
+          },
+          {
+            "name": "Lower 95% CI",
+            "type": "string"
+          },
+          {
+            "name": "Upper 95% CI",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/55aa219b-c041-45cb-aa54-0fafd5381901/resource/cff79e2d-6ecf-4158-9e4f-7078632220ee/download/preterm-and-very-preterm-births-by-county-2010-2018-3.csv",
+          "title": "Preterm and Very Preterm Births by County"
+        }
+      ],
+      "title": "Preterm and Very Preterm Births by County"
+    },
+    {
+      "format": "XLSX",
+      "name": "data-dictionary-preterm-and-very-preterm-births-by-county",
+      "path": "data-dictionary-preterm-and-very-preterm-births-by-county.xlsx",
+      "schema": {
+        "fields": []
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/55aa219b-c041-45cb-aa54-0fafd5381901/resource/26180818-56fb-419d-8ede-11bba412b78c/download/pretermandverypretermbirthsbycounty2010-2013-dd.xlsx",
+          "title": "Data Dictionary-Preterm and Very Preterm Births by County"
+        }
+      ],
+      "title": "Data Dictionary-Preterm and Very Preterm Births by County"
+    }
+  ],
+  "secondary_sources": "",
+  "sources": [
+    {
+      "name": "Maternal, Child and Adolescent Health Division",
+      "web": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/default.aspx "
+    }
+  ],
+  "temporal_coverage": "2010-currently available data",
+  "title": "Preterm and Very Preterm Live Births"
+}
